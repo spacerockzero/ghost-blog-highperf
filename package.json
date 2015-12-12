@@ -1,16 +1,16 @@
 {
-  "name": "ghost-on-heroku",
-  "description": "Just a blogging platform on Heroku.",
+  "name": "jakobanderson-blog",
+  "description": "Jakob Anderson's Web Performance Blog",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cobyism/ghost-on-heroku.git"
+    "url": "git://https://bitbucket.org/spacerockzero/jakobanderson.git"
   },
-  "bugs": "https://github.com/TryGhost/Ghost/issues",
+  "bugs": "https://bitbucket.org/spacerockzero/jakobanderson/issues",
   "private": true,
-  "version": "0.7.0",
+  "version": "1.0.0",
   "dependencies": {
-    "ghost": "0.7.0",
+    "ghost": "0.7.2",
     "ghost-s3-storage": "~0.2.1",
     "pg": "latest"
   },
@@ -21,7 +21,11 @@
     "start": "node server.js"
   },
   "devDependencies": {
+    "bower": "^1.7.1",
     "gulp": "^3.9.0",
-    "gulp-minify-css": "^1.2.2"
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5"
   }
 }
