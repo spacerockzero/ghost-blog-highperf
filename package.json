@@ -15,9 +15,13 @@
     "pg": "latest"
   },
   "engines": {
-    "node": "~0.10.0"
+    "node": "~0.10.40"
   },
   "scripts": {
     "start": "node server.js"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.2"
   }
 }
