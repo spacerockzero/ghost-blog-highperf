@@ -1236,7 +1236,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .post-head.main-header {
-    height: 65vh;
+    height: 40vh;
     min-height: 180px;
 }
 
@@ -1652,6 +1652,9 @@ body:not(.post-template) .post-title {
     float: left;
 }
 
+.photo-credit {
+
+}
 
 /* ==========================================================================
    11. Media Queries - Smaller than 900px
@@ -1753,7 +1756,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-head.main-header {
-        height:45vh;
+        height:35vh;
     }
 
     .tag-head.main-header,
@@ -2022,7 +2025,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-head.main-header {
-        height: 30vh;
+        height: 25vh;
     }
 
     .tag-head.main-header,
