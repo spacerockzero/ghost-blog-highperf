@@ -6,13 +6,20 @@ var concat    = require('gulp-concat')
 var watch     = require('gulp-watch')
 
 /* CONFIGS */
-var cssConfig = {
-  compatibility: 'ie8'
-}
 var jsSrc = [
   'bower_components/jquery/dist/jquery.min.js',
   'content/themes/casper/assets/js/*.js'
 ]
+
+/* MINIFY CSS CONFIG */
+var cssConfig = {
+  compatibility: '',
+  // advanced: true,
+  aggressiveMerging: true,
+  debug: true
+}
+
+/* UGLIFYJS CONFIG */
 var uglifyConfig = {
 
 }
