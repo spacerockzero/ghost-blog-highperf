@@ -185,7 +185,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: Times, serif;
+    font-family: Georgia, Times, serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
@@ -195,11 +195,11 @@ body {
     -o-font-feature-settings: 'kern' 1;
     text-rendering: geometricPrecision;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   body {
     font-family: "Merriweather", serif;
   }
-}
+}*/
 
 ::-moz-selection {
     background: #D6EDFF;
@@ -220,12 +220,12 @@ h4, h5, h6 {
     font-family: Helvetica, Arial, sans-serif;
     text-rendering: geometricPrecision;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   h1, h2, h3,
   h4, h5, h6 {
     font-family: "Open Sans", sans-serif;
   }
-}
+}*/
 
 h1 {
     font-size: 5rem;
@@ -536,11 +536,11 @@ body.nav-opened .site-wrapper {
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .main-nav a {
     font-family: "Open Sans", sans-serif;
   }
-}
+}*/
 
 /* Navigation */
 body.nav-opened .nav-cover {
@@ -722,11 +722,11 @@ body.nav-opened .nav {
     background: #fff;
     transition: all ease 0.3s;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .subscribe-button {
     font-family: "Open Sans", sans-serif;
   }
-}
+}*/
 .subscribe-button:before {
     font-size: 9px;
     margin-right: 6px;
@@ -894,25 +894,25 @@ body.nav-opened .nav {
     font-family: Helvetica, Arial, sans-serif;
     color: #fff;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .page-title {
     font-family: "Open Sans", sans-serif;
   }
-}
+}*/
 .page-description {
     margin: 0;
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: Times, serif;
+    font-family: Georgia, Times, serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .page-description {
     font-family: "Merriweather", serif;
   }
-}
+}*/
 
 .no-cover.main-header {
     min-height: 160px;
@@ -996,11 +996,11 @@ body:not(.post-template) .post-title {
     line-height: 2.2rem;
     color: #9EABB3;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .post-meta {
     font-family: "Open Sans", sans-serif;
   }
-}
+}*/
 .author-thumb {
     width: 24px;
     height: 24px;
@@ -1344,15 +1344,15 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: Times, serif;
+    font-family: Georgia, Times, serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .author-profile .author-meta {
     font-family: "Merriweather", serif;
   }
-}
+}*/
 .author-meta span {
     display: inline-block;
     margin: 0 2rem 1rem 0;
@@ -1441,11 +1441,11 @@ body:not(.post-template) .post-title {
     border-radius: 4px;
     transition: all 0.5s ease;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .read-next-story .post:before {
     font-family: "Open Sans", sans-serif;
   }
-}
+}*/
 .read-next-story.prev .post:before {
     content: "You Might Enjoy";
 }
@@ -1536,11 +1536,11 @@ body:not(.post-template) .post-title {
     color: #9EABB3;
     text-align: center;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .pagination {
     font-family: "Open Sans", sans-serif;
   }
-}
+}*/
 .pagination a {
     color: #9EABB3;
     transition: all 0.2s ease;
@@ -1624,11 +1624,11 @@ body:not(.post-template) .post-title {
     line-height: 1.75em;
     color: #BBC7CC;
 }
-@media only screen and (min-width: 901px){
+/*@media only screen and (min-width: 901px){
   .site-footer {
     font-family: "Open Sans", sans-serif;
   }
-}
+}*/
 .site-footer a {
     color: #BBC7CC;
     text-decoration: none;
