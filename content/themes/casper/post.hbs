@@ -36,6 +36,7 @@
 
             {{#if image}}
             <figure class="author-image">
+                {{! replace this with media-query-sensitive img sources or a picture element, so mobile downloads less }}
                 <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
             </figure>
             {{/if}}
