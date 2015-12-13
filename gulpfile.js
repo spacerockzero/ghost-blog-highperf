@@ -8,7 +8,10 @@ var watch     = require('gulp-watch')
 /* CONFIGS */
 var jsSrc = [
   'bower_components/jquery/dist/jquery.min.js',
-  'content/themes/casper/assets/js/*.js'
+  'content/themes/casper/assets/js/jquery.fitvids.js',
+  'content/themes/casper/assets/js/index.js',
+  'node_modules/prefetch/prefetch.js',
+  'content/themes/casper/assets/js/app.js'
 ]
 
 /* MINIFY CSS CONFIG */

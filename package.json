@@ -12,7 +12,8 @@
   "dependencies": {
     "ghost": "0.7.2",
     "ghost-s3-storage": "~0.2.1",
-    "pg": "latest"
+    "pg": "latest",
+    "prefetch": "^0.1.1"
   },
   "engines": {
     "node": "~0.10.40"
