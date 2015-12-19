@@ -10,7 +10,7 @@
   "private": true,
   "version": "1.0.0",
   "dependencies": {
-    "ghost": "git+https://github.com/spacerockzero/Ghost.git#service-worker",
+    "ghost": "git+https://github.com/spacerockzero/Ghost.git#serviceworker",
     "ghost-s3-storage": "~0.2.1",
     "pg": "latest",
     "prefetch": "^0.1.1"
