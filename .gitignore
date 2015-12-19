@@ -2,5 +2,4 @@
 node_modules/
 *.log
 content/data/ghost-dev.db
-# image-proc/opto/*
-image-proc/raw/*
+image-proc
