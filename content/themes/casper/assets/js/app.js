@@ -7,4 +7,4 @@ Prefetch.init({
   hoverDelay: 50,           //The number of miliseconds after which a sustained hover triggers a link prefetch
   enableTouch: true,       //Whether to prefetch on touchstart and therefore on mobile
   waitForMousedown: false   //Whether to prefetch on mousedown instead of on hover
-})
+});
