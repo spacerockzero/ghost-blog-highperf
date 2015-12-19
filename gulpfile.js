@@ -37,59 +37,67 @@ gulp.task('css', function(){
     .pipe(gulp.dest('content/themes/casper/assets/dist/css'))
 })
 
-gulp.task('js', function(){
+gulp.task('move-sw-toolbox', function () {
+  return gulp.src('node_modules/sw-toolbox/sw-toolbox.js')
+    .pipe(uglify(uglifyConfig))
+    .pipe(gulp.dest('content/themes/casper/assets/dist/js'))
+});
+
+gulp.task('js', ['move-sw-toolbox'], function(){
   return gulp.src(jsSrc)
     .pipe(concat('bundle.min.js'))
     .pipe(uglify(uglifyConfig))
     .pipe(gulp.dest('content/themes/casper/assets/dist/js'))
 })
 
-function writeServiceWorkerFile(rootDir, handleFetch, callback) {
-  var config = {
-    cacheId: packageJson.name,
-    // dynamicUrlToDependencies: {
-    //   'dynamic/page1': [
-    //     path.join(rootDir, 'views', 'layout.jade'),
-    //     path.join(rootDir, 'views', 'page1.jade')
-    //   ],
-    //   'dynamic/page2': [
-    //     path.join(rootDir, 'views', 'layout.jade'),
-    //     path.join(rootDir, 'views', 'page2.jade')
-    //   ]
-    // },
-    // If handleFetch is false (i.e. because this is called from generate-service-worker-dev), then
-    // the service worker will precache resources but won't actually serve them.
-    // This allows you to test precaching behavior without worry about the cache preventing your
-    // local changes from being picked up during the development cycle.
-    handleFetch: handleFetch,
-    logger: $.util.log,
-    staticFileGlobs: [
-      rootDir + '/css/**.css',
-      // rootDir + '/**.html',
-      // rootDir + '/images/**.*',
-      // rootDir + '/js/**.js'
-    ],
-    stripPrefix: rootDir + '/assets/',
-    // verbose defaults to false, but for the purposes of this demo, log more.
-    verbose: true
-  };
-
-  swPrecache.write(path.join(rootDir, 'service-worker.js'), config, callback);
-}
-
-gulp.task('generate-service-worker-dev', function(callback) {
-  writeServiceWorkerFile(DIST_DIR, false, callback);
-});
-
-gulp.task('generate-service-worker-prod', function(callback) {
-  writeServiceWorkerFile(DIST_DIR, true, callback);
-});
+// function writeServiceWorkerFile(rootDir, handleFetch, callback) {
+//   var config = {
+//     cacheId: packageJson.name,
+//     dynamicUrlToDependencies: {
+//       'dynamic/page1': [
+//         path.join(rootDir, 'views', 'layout.jade'),
+//         path.join(rootDir, 'views', 'page1.jade')
+//       ],
+//       'dynamic/page2': [
+//         path.join(rootDir, 'views', 'layout.jade'),
+//         path.join(rootDir, 'views', 'page2.jade')
+//       ]
+//     },
+//     // If handleFetch is false (i.e. because this is called from generate-service-worker-dev), then
+//     // the service worker will precache resources but won't actually serve them.
+//     // This allows you to test precaching behavior without worry about the cache preventing your
+//     // local changes from being picked up during the development cycle.
+//     handleFetch: handleFetch,
+//     logger: $.util.log,
+//     staticFileGlobs: [
+//       'content/themes/casper/assets/dist/css/*.css',
+//       'content/themes/casper/assets/dist/js/*.js'
+//       // rootDir + '/css/**/*.css',
+//       // rootDir + '/**.html',
+//       // rootDir + '/images/**.*',
+//       // rootDir + '/js/**/*.js'
+//     ],
+//     stripPrefix: 'content/themes/casper',
+//     // verbose defaults to false, but for the purposes of this demo, log more.
+//     verbose: true
+//   };
+//
+//   swPrecache.write(path.join(rootDir, 'service-worker.js'), config, callback);
+// }
+//
+// gulp.task('generate-service-worker-dev', function(callback) {
+//   writeServiceWorkerFile(DIST_DIR, false, callback);
+// });
+//
+// gulp.task('generate-service-worker-prod', function(callback) {
+//   writeServiceWorkerFile(DIST_DIR, true, callback);
+// });
 
 gulp.task('watch', function() {
   gulp.watch(['content/themes/casper/assets/js/*.js','!content/themes/casper/assets/dist/**/*.js'], ['js'])
   gulp.watch(['content/themes/casper/assets/css/*.css','!content/themes/casper/assets/**/*.css'], ['css'])
 })
 
-gulp.task('dev', ['css', 'js', 'generate-service-worker-dev', 'watch']);
+gulp.task('dev', ['css', 'js', 'watch']);
 
-gulp.task('prod', ['css', 'js', 'generate-service-worker-prod']);
+gulp.task('prod', ['css', 'js']);
