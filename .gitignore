@@ -1,3 +1,5 @@
 node_modules/
 *.log
 content/data/ghost-dev.db
+.env
+HEROKU_URL="/"
