@@ -12,6 +12,7 @@
   "dependencies": {
     "ghost": "0.7.2",
     "ghost-s3-storage": "~0.2.1",
+    "newrelic": "^1.24.1",
     "pg": "latest",
     "prefetch": "^0.1.1"
   },
