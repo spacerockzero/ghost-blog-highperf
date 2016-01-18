@@ -3,3 +3,4 @@ node_modules/
 content/data/ghost-dev.db
 .env
 HEROKU_URL="/"
+content/images

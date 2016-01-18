@@ -212,19 +212,22 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
+    font-weight:700;
     font-family: Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-rendering: optimizeSpeed;
 }
 
 h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 5rem;
-    letter-spacing: -2px;
-    text-indent: -3px;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    font-weight: 100;
 }
 
 h2 {
     font-size: 3.6rem;
-    letter-spacing: -1px;
+    letter-spacing: 0;
 }
 
 h3 {
@@ -503,7 +506,7 @@ body.nav-opened .site-wrapper {
     position: relative;
     display: table;
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     margin-bottom: 5rem;
     text-align: center;
     /*background: #222 no-repeat center center;*/
@@ -869,9 +872,9 @@ body.nav-opened .nav {
 .page-title {
     margin: 10px 0 10px 0;
     font-size: 5rem;
-    letter-spacing: -1px;
-    font-weight: 700;
-    font-family: Verdana, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #fff;
 }
 
@@ -904,14 +907,14 @@ body.nav-opened .nav {
 .home-template .page-title {
     -webkit-animation: fade-in-down 0.6s;
     animation: fade-in-down 0.6s;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    /*-webkit-animation-delay: 0.2s;*/
+    /*animation-delay: 0.2s;*/
 }
 .home-template .page-description {
     -webkit-animation: fade-in-down 0.9s;
     animation: fade-in-down 0.9s;
-    -webkit-animation-delay: 0.1s;
-    animation-delay: 0.1s;
+    /*-webkit-animation-delay: 0.1s;*/
+    /*animation-delay: 0.1s;*/
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -1077,7 +1080,24 @@ body:not(.post-template) .post-title {
 }
 
 .main-header .post-meta {
-    margin: 0;
+    margin: 0.5em 0 0 0;
+}
+.main-header .blog-title {
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  float: left;
+  margin-left: 1em;
+  margin-top: 0.1em;
+}
+.main-header .blog-title:hover {
+  color: #aaa;
+}
+@media (max-width: 500px) {
+  .main-header .blog-title {
+    display: none;
+  }
 }
 
 .main-header .post-date {
@@ -1240,12 +1260,12 @@ body:not(.post-template) .post-title {
 }
 
 .tag-head.main-header {
-    height: 40vh;
+    height: 20vh;
     min-height: 180px;
 }
 
 .author-head.main-header {
-    height: 40vh;
+    height: 15vh;
     min-height: 180px;
 }
 
@@ -1671,7 +1691,7 @@ body:not(.post-template) .post-title {
 
     .page-title {
         font-size: 4rem;
-        letter-spacing: -1px;
+        letter-spacing: 2px;
     }
 
     .page-description {
@@ -1742,7 +1762,7 @@ body:not(.post-template) .post-title {
 
     .tag-head.main-header,
     .author-head.main-header {
-        height: 30vh;
+        height: 10vh;
     }
 
     .no-cover.post-head.main-header {
@@ -1913,7 +1933,7 @@ body:not(.post-template) .post-title {
 
     h1 {
         font-size: 2.8rem;
-        letter-spacing: -1px;
+        letter-spacing: 2px;
     }
 
     h2 {
@@ -2011,7 +2031,7 @@ body:not(.post-template) .post-title {
 
     .tag-head.main-header,
     .author-head.main-header {
-        height: 20vh;
+        height: 10vh;
     }
 
     .author-profile .author-image {
