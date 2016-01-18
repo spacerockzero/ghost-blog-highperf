@@ -1044,8 +1044,9 @@ body:not(.post-template) .post-title {
    5. Single Post - When you click on an individual post
    ========================================================================== */
 .main-header.no-cover .post-header {
-  margin-bottom: 6vh;
-  margin-top: 0vh;
+  /*margin-bottom: 6vh;
+  margin-top: 0vh;*/
+  margin: 0vh auto 6vh;
 }
 .main-header.no-cover .main-nav {
   padding-bottom: 0;
@@ -1053,12 +1054,15 @@ body:not(.post-template) .post-title {
 }
 /*@media (max-width: 899px){*/
   .main-header .post-header {
-     margin-top: 0vh;
+     margin: 0vh auto;
+     max-width:80%;
   }
 /*}*/
 @media (min-width: 900px){
   .main-header .post-header {
-     margin-top: 7vh;
+     /*margin-top: 7vh;
+     margin-bottom: 5vh;*/
+     margin: 7vh auto 5vh auto;
   }
 }
 @media only screen and (max-width: 500px) {
