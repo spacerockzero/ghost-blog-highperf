@@ -227,7 +227,7 @@ h1 {
 
 h2 {
     font-size: 3.6rem;
-    letter-spacing: 0;
+    letter-spacing: -2px;
 }
 
 h3 {
@@ -509,9 +509,8 @@ body.nav-opened .site-wrapper {
     height: 30vh;
     margin-bottom: 5rem;
     text-align: center;
-    /*background: #222 no-repeat center center;*/
-    /*background-size: cover;*/
     overflow: hidden;
+    box-shadow: inset 0 0 8em 1em rgba(0,0,0,0.5)
 }
 
 .main-header .inner {
@@ -1047,25 +1046,30 @@ body:not(.post-template) .post-title {
    5. Single Post - When you click on an individual post
    ========================================================================== */
 .main-header.no-cover .post-header {
-  /*margin-bottom: 6vh;
-  margin-top: 0vh;*/
-  margin: 0vh auto 6vh;
+  margin: 5vh auto 10vh;
 }
+/*@media (min-width: 900px) {
+  .main-header.no-cover .post-header {
+    margin: 3vh auto 10vh;
+  }
+}*/
 .main-header.no-cover .main-nav {
   padding-bottom: 0;
   margin-bottom: 20px;
 }
-/*@media (max-width: 899px){*/
+.main-header .post-header {
+  max-width:80%;
+}
+@media (max-width: 899px){
   .main-header .post-header {
-     margin: 0vh auto;
-     max-width:80%;
+     margin: 2vh auto;
   }
-/*}*/
+}
 @media (min-width: 900px){
   .main-header .post-header {
      /*margin-top: 7vh;
      margin-bottom: 5vh;*/
-     margin: 7vh auto 5vh auto;
+     margin: 12vh auto 5vh auto;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1077,6 +1081,7 @@ body:not(.post-template) .post-title {
 .main-header .post-title {
     margin-bottom: 0;
     color: #fff;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .main-header .post-meta {
@@ -1248,12 +1253,12 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .post-head.main-header {
-    height: 20vh;
+    height: 30vh;
     min-height: 180px;
 }
 
 .no-cover.post-head.main-header {
-    height: 85px;
+    /*height: 85px;*/
     min-height: 0;
     /*margin-bottom: 0;*/
     background: transparent;
@@ -1407,8 +1412,10 @@ body:not(.post-template) .post-title {
     position: relative;
     text-align: center;
     color: #fff;
-    background: #222 no-repeat center center;
-    background-size: cover;
+    /*background: #222 no-repeat center center;*/
+    /*background-size: cover;*/
+    background-repeat: repeat;
+    background-size: initial;
     overflow: hidden;
 }
 .read-next-story:hover:before {
@@ -1429,7 +1436,8 @@ body:not(.post-template) .post-title {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 10em 3em rgba(0,0,0,0.3);
     transition: all 0.5s ease;
 }
 
@@ -1455,6 +1463,9 @@ body:not(.post-template) .post-title {
 }
 
 .read-next-story h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
     margin-top: 1rem;
     color: #fff;
 }
@@ -1938,7 +1949,7 @@ body:not(.post-template) .post-title {
 
     h2 {
         font-size: 2.4rem;
-        letter-spacing: 0;
+        letter-spacing: -2px;
     }
 
     h3 {
