@@ -431,15 +431,34 @@ table.plain tbody > tr:nth-child(odd) > th {
    background: transparent;
 }
 
-iframe, .fluid-width-video-wrapper {
+/*iframe, .fluid-width-video-wrapper {
     display: block;
     margin: 1.75em 0;
-}
+}*/
 
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
-.fluid-width-video-wrapper iframe {
+/*.fluid-width-video-wrapper iframe {
     margin: 0;
+}*/
+
+/* Since I'm not using fitvids anymore, let's do this with CSS */
+.flex-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 67.5%;
+  position: relative;
+  margin-bottom: 2em;
+}
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
 }
 
 
